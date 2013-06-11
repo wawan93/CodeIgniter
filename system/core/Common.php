@@ -730,5 +730,20 @@ if ( ! function_exists('function_usable'))
 	}
 }
 
+/**
+*	This function print debug information about variable $var
+*/
+if ( ! function_exists('dbg')) {
+	function dbg ($var) {
+		echo "<pre>"; 
+		var_dump($var); 
+		echo "\n";
+		print_r($var);
+		echo "</pre>";
+		die();
+	}
+}
+
+
 /* End of file Common.php */
 /* Location: ./system/core/Common.php */
